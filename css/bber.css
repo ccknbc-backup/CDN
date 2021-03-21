@@ -1,0 +1,106 @@
+/* bb哔哔 */
+/* bb样式 */
+.timeline ul li{
+  position: relative;
+  padding-left: 2.5rem;
+}
+/* 标题 */
+.bb-info{
+  display: inline;
+  float: right;
+  line-height: 3.7rem;
+}
+/* 每条动态 */
+#bber > section > ul > div > li > div{
+  display: flex;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  background: #F6F6F6;
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin-top: 12px;
+}
+#bber p.count{
+  margin: 0;
+  color: #3c3c4399;
+}
+#bber .datafrom i{
+  margin-right: 4px;
+}
+/* 时间 */
+#bber > section > ul > div > li > div .datatime{
+  order: 1;
+  color: #8fbc8f;
+  font-size: 0.6rem;
+}
+/* 内容 */
+#bber > section > ul > div > li > div .datacont{
+  order: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 100%;
+  line-height: 1.38;
+  margin: 8px 0;
+}
+/* 设备 */
+#bber > section > ul > div > li > div .datafrom{
+  order: 2;
+  color: #4CAF50;
+  font-size: 0.6rem!important;
+  margin-left: 8px;
+}
+#bber > section > ul > div > li > div .datafrom small{
+  font-size: 100%;
+}
+/* 时间线 */
+.timeline ul li::after {
+  position: absolute;
+  top: 0.5rem;
+  left: 0rem;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8px;
+  content: "";
+  background-image: url(https://cdn.jsdelivr.net/gh/ccknbc-backup/cdn/logo/logo.png);
+  background-size: 2rem;
+}
+/* 加载更多 */
+.load-btn.button-load{
+  background: #f6f6f6;
+  color: #ef794f;
+  padding: 12px 12px;
+  margin: 8px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.load-btn.button-load:hover{
+  background: #20afff;
+  color: #f2b94b;
+  transition: 0.3s;
+}
+[data-theme="dark"]
+  #bber > section > ul > div > li > div {
+  background: #2c2c2c;
+}
+[data-theme="dark"]
+#bber p.count{
+  margin: 0;
+  color: #a1a2b8;
+}
+[data-theme="dark"]
+  .load-btn.button-load {
+  color: #f2b94b;
+}
+[data-theme="dark"]
+  .load-btn.button-load {
+  background: #696969;
+}
+[data-theme="dark"]
+.load-btn.button-load:hover{
+  background: #44d7b680;
+  color: #ef794f;
+}
