@@ -11,7 +11,7 @@
   line-height: 3.7rem;
 }
 /* 每条动态 */
-#newbber > section > ul > div > li > div{
+#bber > section > ul > div > li > div{
   display: flex;
   flex-direction: initial;
   flex-wrap: wrap;
@@ -20,21 +20,21 @@
   padding: 8px 16px;
   margin-top: 12px;
 }
-#newbber p.count{
+#bber p.count{
   margin: 0;
   color: #3c3c4399;
 }
-#newbber .datafrom i{
+#bber .datafrom i{
   margin-right: 4px;
 }
 /* 时间 */
-#newbber > section > ul > div > li > div .datatime{
+#bber > section > ul > div > li > div .datatime{
   order: 1;
   color: #8fbc8f;
   font-size: 0.6rem;
 }
 /* 内容 */
-#newbber > section > ul > div > li > div .datacont{
+#bber > section > ul > div > li > div .datacont{
   order: 0;
   font-size: 0.8rem;
   font-weight: bold;
@@ -43,13 +43,13 @@
   margin: 8px 0;
 }
 /* 设备 */
-#newbber > section > ul > div > li > div .datafrom{
+#bber > section > ul > div > li > div .datafrom{
   order: 2;
   color: #4CAF50;
   font-size: 0.6rem!important;
   margin-left: 8px;
 }
-#newbber > section > ul > div > li > div .datafrom small{
+#bber > section > ul > div > li > div .datafrom small{
   font-size: 100%;
 }
 /* 时间线 */
@@ -83,11 +83,11 @@
   transition: 0.3s;
 }
 [data-theme="dark"]
-  #newbber > section > ul > div > li > div {
+  #bber > section > ul > div > li > div {
   background: #2c2c2c;
 }
 [data-theme="dark"]
-#newbber p.count{
+#bber p.count{
   margin: 0;
   color: #a1a2b8;
 }
