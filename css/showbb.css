@@ -37,8 +37,10 @@ ul,li{
   box-shadow: var(--card-box-shadow);
   display: flex;
 }
-#bbTimeList:hover{
+i.fas.fa-angle-double-right.faa-passing.animated:hover,i.far.fa-comment-alt:hover{
   color: #8fbc8f;
+}
+#bbTimeList:hover{
   background: #f6f6f6;
 }
 [data-theme="dark"]
