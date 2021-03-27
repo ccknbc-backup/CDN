@@ -1,5 +1,5 @@
 function getbbdata(){
-  var bbsurl = "https://6363-ccknbc-154167-1300914868.tcb.qcloud.la/json/bber.json"
+  var bbsurl = "https://6363-ccknbc-154167-1300914868.tcb.qcloud.la/json/newbber.json"
   
   var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
   httpRequest.open('GET', bbsurl, true);//第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
@@ -28,7 +28,7 @@ function getbbdata(){
 }
 
 var generateBBHtml = array => {
-  var $dom = document.querySelector('#bber');
+  var $dom = document.querySelector('#newbber');
   var result = '<section class="timeline page-1"><ul><div class="list">'
   console.log(array)
 
@@ -57,13 +57,13 @@ var generateBBHtml = array => {
   }
   result += '</div></ul></section>'
   
-  var $dom = document.querySelector('#bber');
+  var $dom = document.querySelector('#newbber');
   $dom.innerHTML = result;
   window.lazyLoadInstance && window.lazyLoadInstance.update();
   window.pjax && window.pjax.refresh($dom);
 }
 
-if (document.querySelector('#bber')) {
+if (document.querySelector('#newbber')) {
   getbbdata()
 }
 
