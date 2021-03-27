@@ -28,7 +28,7 @@ function getbbdata(){
 }
 
 var generateBBHtml = array => {
-  var $dom = document.querySelector('#newbber');
+  var $dom = document.querySelector('#bber');
   var result = '<section class="timeline page-1"><ul><div class="list">'
   console.log(array)
 
@@ -57,13 +57,13 @@ var generateBBHtml = array => {
   }
   result += '</div></ul></section>'
   
-  var $dom = document.querySelector('#newbber');
+  var $dom = document.querySelector('#bber');
   $dom.innerHTML = result;
   window.lazyLoadInstance && window.lazyLoadInstance.update();
   window.pjax && window.pjax.refresh($dom);
 }
 
-if (document.querySelector('#newbber')) {
+if (document.querySelector('#bber')) {
   getbbdata()
 }
 
