@@ -1,0 +1,24 @@
+.li-style:hover{
+  color: #ef794f;
+}
+
+i.fas.fa-angle-double-right.faa-passing.animated:hover,i.far.fa-comment-alt:hover{
+  color: #8fbc8f;
+}
+#bbTimeList:hover{
+  background: #f6f6f6;
+}
+[data-theme="dark"]
+.li-style:hover{
+  color: #f2b94b;
+}
+[data-theme="dark"]
+#bbTimeList:hover{
+  background: #44d7b680;
+}
+
+.bber-gotobb {
+  line-height: 25px;
+  margin-left: 8px;
+  transition: .3s;
+}
