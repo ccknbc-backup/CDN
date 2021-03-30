@@ -5,7 +5,7 @@
 i.fas.fa-angle-double-right.faa-passing.animated:hover,i.far.fa-comment-alt:hover{
   color: #8fbc8f;
 }
-#bbTimeList:hover{
+#ddTimeList:hover{
   background: #FFE4B5;
 }
 [data-theme="dark"]
@@ -13,11 +13,11 @@ i.fas.fa-angle-double-right.faa-passing.animated:hover,i.far.fa-comment-alt:hove
   color: #f2b94b;
 }
 [data-theme="dark"]
-#bbTimeList:hover{
+#ddTimeList:hover{
   background: #44d7b680;
 }
 
-.bber-gotobb {
+.daodao-gotodd {
   line-height: 25px;
   margin-left: 8px;
   transition: .3s;

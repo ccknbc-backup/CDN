@@ -2,10 +2,10 @@ function getLocalTime(nS) {
     return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
 }
 function getdddata(){
-    var bbsurl = "https://api.ccknbc.now.sh/api/daodao?q=10"
+    var ddsurl = "https://api.ccknbc.now.sh/api/daodao?q=10"
 
     var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
-    httpRequest.open('GET', bbsurl, true);//第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
+    httpRequest.open('GET', ddsurl, true);//第二步：打开连接  将请求参数写在url中  ps:"./Ptest.php?name=test&nameone=testone"
     httpRequest.send();//第三步：发送请求  将请求参数写在URL中
     /**
      * 获取数据后的处理程序
@@ -15,14 +15,14 @@ function getdddata(){
             var json = httpRequest.responseText;//获取到json字符串，还需解析
             var obj = eval('(' + json + ')');
             // console.log(obj.data)
-            const bbArray = obj.map(e => {
+            const ddArray = obj.map(e => {
                 return {
                     'date': getLocalTime(e.date.$date),
                     'content': e.content,
                     'from': e.from
                 }
             })
-            saveToLocal.set('ccknbc-dd', JSON.stringify(bbArray), 5 / (60 * 24))
+            saveToLocal.set('ccknbc-dd', JSON.stringify(ddArray), 5 / (60 * 24))
             const data = saveToLocal.get('ccknbc-dd');
             generateddHtml(JSON.parse(data))
         }
@@ -30,7 +30,7 @@ function getdddata(){
 }
 
 var generateddHtml = array => {
-    var $dom = document.querySelector('#bber');
+    var $dom = document.querySelector('#daodao');
     var result = '<section class="timeline page-1"><ul><div class="list">'
     console.log(array)
 
@@ -57,13 +57,13 @@ var generateddHtml = array => {
     }
     result += '</div></ul></section>'
 
-    var $dom = document.querySelector('#bber');
+    var $dom = document.querySelector('#daodao');
     $dom.innerHTML = result;
     window.lazyLoadInstance && window.lazyLoadInstance.update();
     window.pjax && window.pjax.refresh($dom);
 }
 
-if (document.querySelector('#bber')) {
+if (document.querySelector('#daodao')) {
     getdddata()
 }
 
