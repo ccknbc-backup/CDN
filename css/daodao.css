@@ -55,7 +55,7 @@
 /* 时间线 */
 .timeline ul li::after {
   position: absolute;
-  top: 0.5rem;
+  top: 1rem;
   left: 0rem;
   z-index: 1;
   width: 2rem;
