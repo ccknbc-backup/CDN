@@ -75,5 +75,5 @@ color: #f2b94b;
 }
 [data-theme="dark"]
 #bber > section > ul > div > li > div:hover{
-  background: #44d7b680;
+  background: rgba(68,215,182,.5);
 }
