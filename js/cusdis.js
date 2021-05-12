@@ -1,5 +1,5 @@
 window.CUSDIS_LOCALE = {
-  powered_by: '',
+  powered_by: '留言由 Cusdis 提供',
   post_comment: '留言',
   loading: '加载中',
 
