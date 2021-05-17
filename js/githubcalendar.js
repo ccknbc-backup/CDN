@@ -1,5 +1,5 @@
 var github_canlendar = (git_user, git_color) => {
-    var git_githubapiurl = "https://api.ccknbc.now.sh/api/github-calendar?" + git_user;
+    var git_githubapiurl = "https://api.ccknbc.vercel.app/api/github-calendar?" + git_user;
     var git_fixed = 'fixed';
     var git_px = 'px';
     var git_month = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'];
