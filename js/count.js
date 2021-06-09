@@ -1,6 +1,3 @@
----
-translate_title: ''
----
 var DISQUSWIDGETS,disqus_domain,disqus_shortname;
 typeof DISQUSWIDGETS==="undefined"&&(DISQUSWIDGETS=function(){var f=document,a=f.getElementById("dsq-count-scr"),a=a&&a.src.match(/(https?:)?\/\/(?:www\.)?([\w_\-]+)\.((?:dev\.)?disqus\.(?:com|org)(?::\d+)?)/i),e={},s=f.head||f.body,j={},q={identifier:1,url:2};e.domain=a&&a[3]||disqus_domain||"ccknbc.workers.dev";e.forum=a&&a[2]||disqus_shortname||"ccknbc-disqus";e.proto=a&&a[1]||"";e.getCount=function(b){var c;c=encodeURIComponent;var a=e.proto+"//"+e.forum+"."+e.domain+"/count-data.js?",d=[],k=0,l=10,r="",b=b||{};b.reset&&
 (j={},r="&_="+ +new Date);for(var b=[f.getElementsByTagName("A"),f.getElementsByClassName&&f.getElementsByClassName("disqus-comment-count")||[]],m,i,g,h,n=0;n<b.length;n++){m=b[n];for(var o=0;o<m.length;o++){i=m[o];g=i.getAttribute("data-disqus-identifier");h=i.hash==="#disqus_thread"&&i.href.replace("#disqus_thread","")||i.getAttribute("data-disqus-url");if(g)h=q.identifier;else if(h)g=h,h=q.url;else continue;var p;j.hasOwnProperty(g)?p=j[g]:(p=j[g]={elements:[],type:h},d.push(c(h)+"="+c(g)));p.elements.push(i)}}d.sort();
