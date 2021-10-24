@@ -1,0 +1,60 @@
+title{
+    display:block;
+    color:sandybrown;
+    }
+author,name,email{
+    display:block;
+    color:lightblue;
+    }
+link,url,guid,enclosure{
+    display:block;
+    color:orange;
+    }
+icon{
+    display:block;
+    color:darkturquoise;
+    }
+subtitle{
+    display:block;
+    color:lightseagreen;
+    }
+generator{
+    display:block;
+    color:lightsalmon;
+    }
+copyright{
+    display:block;
+    color:darkseagreen;
+    }
+id{
+    display:block;
+    color:tomato;
+    }
+link{
+    display:block;
+    color:midnightblue;
+    }
+content{
+    display:block;
+    color:darkcyan;
+    }
+summary,description{
+    display:block;
+    color:coral;
+    }
+published,pubDate{
+    display:block;
+    color:lightslategray;
+    }
+updated,lastBuildDate{
+    display:block;
+    color:deepskyblue;
+    }
+comments{
+    display:block;
+    color:tan;
+    }
+categorys,category{
+    display:block;
+    color:seagreen;
+    }
