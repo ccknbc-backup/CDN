@@ -7,6 +7,6 @@ Snackbar.show({
     actionText: '查看隐私政策',
     actionTextColor: '#4CAF50',
     onActionClick: function () {
-        window.open('/privacy', 'newwindow', 'height=480, width=720, left='+ (screen.availWidth-720)/2 +',top=' + (screen.availHeight-480)/2 + ';toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')
+        window.open('/privacy-policy', 'newwindow', 'height=480, width=720, left='+ (screen.availWidth-720)/2 +',top=' + (screen.availHeight-480)/2 + ';toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')
     }
 })
