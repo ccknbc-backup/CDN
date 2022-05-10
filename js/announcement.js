@@ -1,5 +1,5 @@
-var localUrl = window.location.href;  
-var regex = new RegExp("^https?://(test-)?blog\.ccknbc.cc(/?|/index[(.|_)].*|/?[?].*)$", "i");
+var localUrl = window.location.href; 
+var regex = new RegExp("^https?://?blog\.ccknbc.cc(/?|/index[(.|_)].*|/?[?].*)$", "i");
 if(regex.test(localUrl)==true){
     Snackbar.show({
         text: '本站统计已更换为【51.LA】',
