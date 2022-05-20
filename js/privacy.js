@@ -1,13 +1,13 @@
 "use strict";
 function getIpInfo() {
-    fetch("https://api.ooomn.com/api/ip").then(function (e) {
+    fetch("https://api.vvhan.com/api/getIpInfo").then(function (e) {
         return e.json()
     }).then(function (e) {
-        var n = e.country,
+        var n = e.info.country,
             t = e.ip,
-            r = e.province,
-            i = e.city,
-            o = e.isp;
+            r = e.info.prov,
+            i = e.info.city,
+            o = e.info.lsp;
         document.getElementById("userAgentIp").innerHTML = t, document.getElementById("userAgentCountry").innerHTML =
             n, document.getElementById("userAgentRegion").innerHTML = r, document.getElementById(
                 "userAgentCity").innerHTML = i, document.getElementById("userAgentIsp").innerHTML = o;
