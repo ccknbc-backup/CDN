@@ -1,18 +1,23 @@
 "use strict";
+
 function getIpInfo() {
-    fetch("https://api.vvhan.com/api/getIpInfo").then(function (e) {
-        return e.json()
-    }).then(function (e) {
-        var n = e.info.country,
-            t = e.ip,
-            r = e.info.prov,
-            i = e.info.city,
-            o = e.info.lsp;
-        document.getElementById("userAgentIp").innerHTML = t, document.getElementById("userAgentCountry").innerHTML =
-            n, document.getElementById("userAgentRegion").innerHTML = r, document.getElementById(
-                "userAgentCity").innerHTML = i, document.getElementById("userAgentIsp").innerHTML = o;
-        var u = navigator.userAgent;
-        document.getElementById("userAgentDevice").innerHTML = u
+    fetch("https://ip.useragentinfo.com/jsonp").then(function (a) {
+        return a.json()
+    }).then(function (a) {
+        var b = a.ip,
+            c = a.country,
+            d = a.province,
+            e = a.city,
+            f = a.area,
+            g = a.isp;
+            i = a.desc + a.code;
+        document.getElementById("userAgentIp").innerHTML = b, document.getElementById("userAgentCountry").innerHTML =
+            c, document.getElementById("userAgentRegion").innerHTML = d, document.getElementById(
+                "userAgentCity").innerHTML = e, document.getElementById(
+                    "userAgentArea").innerHTML = f, document.getElementById("userAgentIsp").innerHTML = g;
+        var h = navigator.userAgent;
+        document.getElementById("userAgentDevice").innerHTML = h,document.getElementById(
+            "userAgentCode").innerHTML = i;
     })
 }
 getIpInfo();
